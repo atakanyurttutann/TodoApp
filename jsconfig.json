@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/apiCall/*": ["src/apiCall/*"],
+        "@/api/*": ["src/api/*"],
+        "@/redux/*": ["src/redux/*"],
+        "@/public/*": ["public/*"],
+        "@/components/*": ["src/components/*"],
+        "@/ui/*": ["src/components/ui/*"],
+        "@/view/*": ["src/components/view/*"],
+        "@/composite/*": ["src/components/composite/*"],
+        "@/commons/*": ["src/commons/*"],
+        "@/data/*": ["src/data/*"],
+        "@/utils/*": ["src/utils/*"],
+        "@/cards/*": ["src/components/view/cards/*"]
+      }
+    },
+    "exclude": ["node_modules", "build"]
+  }
