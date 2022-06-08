@@ -1,1 +1,1 @@
-export const ROOT_URL = "http://localhost:3000/api";
+export const ROOT_URL = "https://todo-app-blue-two.vercel.app/api";
