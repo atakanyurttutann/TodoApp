@@ -35,11 +35,11 @@ const HomeView = () => {
       updateTodoInfo.title = title;
       await updateTodo(updateTodoInfo);
       setUpdateTodoInfo({});
-      todoInput.current.value = "";
     } else {
       await dispatch(addTodoAction({ title }));
       getTodos();
     }
+    todoInput.current.value = "";
   };
 
   const updateTodo = async (data) => {
