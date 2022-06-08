@@ -97,7 +97,7 @@ const HomeView = () => {
             </form>
 
             <div className=" pt-[30px] pb-[10px] border-b">
-              { todosData.length && todosData.map((e, index) => {
+              {todosData.length ? todosData.map((e, index) => {
                 if (e.pinned) {
                   return (
                     <div
@@ -127,10 +127,10 @@ const HomeView = () => {
                     </div>
                   );
                 }
-              })}
+              }):"Not data found"}
             </div>
             <div className=" mt-[46px]">
-              {todosData.length && todosData.map((e, index) => {
+              {todosData.length ? todosData.map((e, index) => {
                 if (!e.pinnd) {
                   return (
                     <div
@@ -154,7 +154,7 @@ const HomeView = () => {
                     </div>
                   );
                 }
-              })}
+              }):"Not data found"}
             </div>
           </div>
         </div>
